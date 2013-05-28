@@ -26,4 +26,9 @@ contains
             !
             call mpi_barrier(mpi_comm_world,ierr)
     end subroutine initMPI
+
+
+    subroutine paraPreProcess
+
+    end subroutine paraPreProcess
 end module parallel
