@@ -1,0 +1,18 @@
+流动类型变量
+&flowPara
+flowtype=	1,
+/
+
+流动工况参数
+&flowStatePara
+Reynolds=	6000,
+Ma=	2.5,
+ref_t=	100,
+/
+
+网格相关参数
+&gridPara
+ima= 192,
+jma= 192,
+kma= 192,
+/
