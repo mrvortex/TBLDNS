@@ -8,9 +8,9 @@
 
 .PHONY: all  clean
 
-all: src/main.f90   src/commVar.f90    src/readWrite.f90
-	gfortran -O2 -g -o bin/main \
-		src/main.f90	 src/commVar.f90    src/readWrite.f90
+all: src/main.f90   src/commVar.f90    src/readWrite.f90  src/parallel.f90
+	mpif90 -O2 -g -o bin/main \
+		src/main.f90	 src/commVar.f90    src/readWrite.f90  src/parallel.f90
 	
 clean:
 	rm -f bin/test *.mod
